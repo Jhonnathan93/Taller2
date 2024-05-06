@@ -4,7 +4,7 @@ const pokeneas = [
       nombre: "Pikachu",
       altura: "0.4 m",
       habilidad: "Electricidad estática",
-      imagen: "https://example.com/pikachu.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Pikachu.png",
       frase_filosofica: "¡Pika pika!"
     },
     {
@@ -12,7 +12,7 @@ const pokeneas = [
       nombre: "Charmander",
       altura: "0.6 m",
       habilidad: "Llamas",
-      imagen: "https://example.com/charmander.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Charmander.png",
       frase_filosofica: "La llama que arde en su cola indica su salud y emociones."
     },
     {
@@ -20,7 +20,7 @@ const pokeneas = [
       nombre: "Bulbasaur",
       altura: "0.7 m",
       habilidad: "Espesura",
-      imagen: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Bulbasaur.png",
       frase_filosofica: "Usa su planta en la espalda para extraer nutrientes del sol."
     },
     {
@@ -28,7 +28,7 @@ const pokeneas = [
       nombre: "Squirtle",
       altura: "0.5 m",
       habilidad: "Torrente",
-      imagen: "https://example.com/squirtle.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Squirtle.png",
       frase_filosofica: "Prefiere vivir cerca de fuentes de agua."
     },
     {
@@ -36,7 +36,7 @@ const pokeneas = [
       nombre: "Jigglypuff",
       altura: "0.5 m",
       habilidad: "Canto",
-      imagen: "https://example.com/jigglypuff.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Jigglypuff.png",
       frase_filosofica: "Su canto adormece a quienes lo escuchan."
     },
     {
@@ -44,7 +44,7 @@ const pokeneas = [
       nombre: "Eevee",
       altura: "0.3 m",
       habilidad: "Adaptable",
-      imagen: "https://example.com/eevee.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Eevee.png",
       frase_filosofica: "Puede evolucionar a distintas formas según su entorno."
     },
     {
@@ -52,7 +52,7 @@ const pokeneas = [
       nombre: "Mewtwo",
       altura: "2 m",
       habilidad: "Presión",
-      imagen: "https://example.com/mewtwo.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Mewtwo.png",
       frase_filosofica: "Uno de los Pokémon más poderosos."
     },
     {
@@ -60,7 +60,7 @@ const pokeneas = [
       nombre: "Snorlax",
       altura: "2.1 m",
       habilidad: "Inmunidad",
-      imagen: "https://example.com/snorlax.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Snorlax.png",
       frase_filosofica: "Pasa la mayor parte del día durmiendo y comiendo."
     },
     {
@@ -68,7 +68,7 @@ const pokeneas = [
       nombre: "Gengar",
       altura: "1.5 m",
       habilidad: "Levitación",
-      imagen: "https://example.com/gengar.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Gengar.png",
       frase_filosofica: "Aparece en lugares oscuros y asusta a los desprevenidos."
     },
     {
@@ -76,7 +76,7 @@ const pokeneas = [
       nombre: "Mew",
       altura: "0.4 m",
       habilidad: "Sincronía",
-      imagen: "https://example.com/mew.png",
+      imagen: "https://storage.googleapis.com/jsod-teis-bucket-1/Mew.png",
       frase_filosofica: "Es un Pokémon legendario con habilidades misteriosas."
     }
 ]; 
