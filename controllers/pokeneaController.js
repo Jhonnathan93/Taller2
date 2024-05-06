@@ -1,19 +1,32 @@
+const pokenea = require('../models/pokenea');
 const pokeneas = require('../config/pokeneas');
 
-function obtenerPokeneaAleatorio() {
+function obtenerPokeneaAleatorio(pokeneas) {
     const randomIndex = Math.floor(Math.random() * pokeneas.length);
     return pokeneas[randomIndex];
 }
 
-function getPokenea(req, res) {
-    const randomPokenea = obtenerPokeneaAleatorio();
+function getPokeneaAleatorioJson(req, res) {
+    const randomPokenea = obtenerPokeneaAleatorio(pokeneas);
     const response = {
-        id: randomPokenea.id,
-        nombre: randomPokenea.nombre,
-        altura: randomPokenea.altura,
-        habilidad: randomPokenea.habilidad
+        id: pokenea.getId(randomPokenea),
+        nombre: pokenea.getNombre(randomPokenea),
+        altura: pokenea.getAltura(randomPokenea),
+        habilidad: pokenea.getHabilidad(randomPokenea),
     };
     res.json(response);
 }
 
-module.exports = { getPokenea };
+function getPokeneaAleatorioHTML(req, res) {
+    const randomPokenea = obtenerPokeneaAleatorio(pokeneas);
+    const response = {
+        imagen: pokenea.getImagen(randomPokenea),
+        frase: pokenea.getFraseFilosofica(randomPokenea),
+    };
+    res.json(response);
+}
+
+module.exports = { 
+    getPokeneaAleatorioJson,
+    getPokeneaAleatorioHTML,
+};
