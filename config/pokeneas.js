@@ -20,7 +20,7 @@ const pokeneas = [
       nombre: "Bulbasaur",
       altura: "0.7 m",
       habilidad: "Espesura",
-      imagen: "https://example.com/bulbasaur.png",
+      imagen: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png",
       frase_filosofica: "Usa su planta en la espalda para extraer nutrientes del sol."
     },
     {

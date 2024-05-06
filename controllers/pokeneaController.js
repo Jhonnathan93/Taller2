@@ -23,7 +23,7 @@ function getPokeneaAleatorioHTML(req, res) {
         imagen: pokenea.getImagen(randomPokenea),
         frase: pokenea.getFraseFilosofica(randomPokenea),
     };
-    res.json(response);
+    res.render('pokenea', { pokenea: response });
 }
 
 module.exports = { 
