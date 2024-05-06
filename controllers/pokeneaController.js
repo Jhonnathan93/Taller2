@@ -1,5 +1,6 @@
 const pokenea = require('../models/pokenea');
 const pokeneas = require('../config/pokeneas');
+const os = require("os")
 
 function obtenerPokeneaAleatorio(pokeneas) {
     const randomIndex = Math.floor(Math.random() * pokeneas.length);
@@ -22,8 +23,9 @@ function getPokeneaAleatorioHTML(req, res) {
     const response = {
         imagen: pokenea.getImagen(randomPokenea),
         frase: pokenea.getFraseFilosofica(randomPokenea),
+        containerId: os.hostname()
     };
-    res.render('pokenea', { pokenea: response });
+    res.render('pokenea', { viewData: response });
 }
 
 module.exports = { 

@@ -35,9 +35,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card" style="width: 18rem;">
-                        <img src="<%= pokenea.imagen %>" alt="Imagen de Pokenea">
+                        <img src="<%= viewData.imagen %>" alt="Imagen de Pokenea">
                         <div class="card-body">
-                          <h5 class="card-title"><%= pokenea.frase %></h5>
+                          <h5 class="card-title"><%= viewData.frase %></h5>
+                          <p>Container ID: <%= viewData.containerId %></p>
                         </div>
                       </div>
                 </div>
