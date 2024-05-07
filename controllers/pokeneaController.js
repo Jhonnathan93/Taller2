@@ -1,34 +1,34 @@
-const pokenea = require('../models/pokenea');
-const pokeneas = require('../config/pokeneas');
-const os = require("os")
+const os = require("os");
+const pokeneaModel = require('../models/pokenea');
+const pokeneasData = require('../models/pokeneas');
 
-function obtenerPokeneaAleatorio(pokeneas) {
+function getRandomPokenea(pokeneas) {
     const randomIndex = Math.floor(Math.random() * pokeneas.length);
     return pokeneas[randomIndex];
 }
 
-function getPokeneaAleatorioJson(req, res) {
-    const randomPokenea = obtenerPokeneaAleatorio(pokeneas);
+function getRandomPokeneaJson(req, res) {
+    const randomPokenea = getRandomPokenea(pokeneasData);
     const response = {
-        id: pokenea.getId(randomPokenea),
-        nombre: pokenea.getNombre(randomPokenea),
-        altura: pokenea.getAltura(randomPokenea),
-        habilidad: pokenea.getHabilidad(randomPokenea),
+        id: pokeneaModel.getId(randomPokenea),
+        name: pokeneaModel.getName(randomPokenea),
+        height: pokeneaModel.getHeight(randomPokenea),
+        ability: pokeneaModel.getAbility(randomPokenea),
     };
     res.json(response);
 }
 
-function getPokeneaAleatorioHTML(req, res) {
-    const randomPokenea = obtenerPokeneaAleatorio(pokeneas);
+function getRandomPokeneaHtml(req, res) {
+    const randomPokenea = getRandomPokenea(pokeneasData);
     const response = {
-        imagen: pokenea.getImagen(randomPokenea),
-        frase: pokenea.getFraseFilosofica(randomPokenea),
+        image: pokeneaModel.getImage(randomPokenea),
+        phrase: pokeneaModel.getPhilosophicalPhrase(randomPokenea),
         containerId: os.hostname()
     };
     res.render('pokenea', { viewData: response });
 }
 
 module.exports = { 
-    getPokeneaAleatorioJson,
-    getPokeneaAleatorioHTML,
+    getRandomPokeneaJson,
+    getRandomPokeneaHtml,
 };

@@ -1,34 +1,34 @@
-const pokeneas = require('../config/pokeneas');
+const pokeneas = require('./pokeneas');
 
 function getId(pokenea) {
     return pokenea.id;
 }
 
-function getNombre(pokenea) {
-    return pokenea.nombre;
+function getName(pokenea) {
+    return pokenea.name;
 }
 
-function getAltura(pokenea) {
-    return pokenea.altura;
+function getHeight(pokenea) {
+    return pokenea.height;
 }
 
-function getHabilidad(pokenea) {
-    return pokenea.habilidad;
+function getAbility(pokenea) {
+    return pokenea.ability;
 }
 
-function getImagen(pokenea) {
-    return pokenea.imagen;
+function getImage(pokenea) {
+    return pokenea.image;
 }
 
-function getFraseFilosofica(pokenea) {
-    return pokenea.frase_filosofica;
+function getPhilosophicalPhrase(pokenea) {
+    return pokenea.philosophicalPhrase;
 }
 
 module.exports = {
     getId,
-    getNombre,
-    getAltura,
-    getHabilidad,
-    getImagen,
-    getFraseFilosofica
+    getName,
+    getHeight,
+    getAbility,
+    getImage,
+    getPhilosophicalPhrase
 };
