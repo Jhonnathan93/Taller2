@@ -28,7 +28,15 @@ function getRandomPokeneaHtml(req, res) {
     res.render('pokenea', { viewData: response });
 }
 
+function homePage(req, res) {
+    const response = {
+        message: "Hello, welcome to the Pokenea application!"
+    };
+    res.render('index', {viewData: response});
+}
+
 module.exports = { 
     getRandomPokeneaJson,
     getRandomPokeneaHtml,
+    homePage,
 };
