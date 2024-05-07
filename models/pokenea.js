@@ -1,34 +1,38 @@
-const pokeneas = require('./pokeneas');
+const pokeneas = require('../database/pokeneas');
 
-function getId(pokenea) {
-    return pokenea.id;
+class Pokenea {
+    constructor(id, name, height, ability, image, philosophicalPhrase) {
+        this.id = id;
+        this.name = name;
+        this.height = height;
+        this.ability = ability;
+        this.image = image;
+        this.philosophicalPhrase = philosophicalPhrase;
+    }
+
+    getId() {
+        return this.id;
+    }
+
+    getName() {
+        return this.name;
+    }
+
+    getHeight() {
+        return this.height;
+    }
+
+    getAbility() {
+        return this.ability;
+    }
+
+    getImage() {
+        return this.image;
+    }
+
+    getPhilosophicalPhrase() {
+        return this.philosophicalPhrase;
+    }
 }
 
-function getName(pokenea) {
-    return pokenea.name;
-}
-
-function getHeight(pokenea) {
-    return pokenea.height;
-}
-
-function getAbility(pokenea) {
-    return pokenea.ability;
-}
-
-function getImage(pokenea) {
-    return pokenea.image;
-}
-
-function getPhilosophicalPhrase(pokenea) {
-    return pokenea.philosophicalPhrase;
-}
-
-module.exports = {
-    getId,
-    getName,
-    getHeight,
-    getAbility,
-    getImage,
-    getPhilosophicalPhrase
-};
+module.exports = Pokenea;
