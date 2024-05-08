@@ -54,9 +54,8 @@ pokenea-app/
 │   ├── views/
 │   │   ├── partials/
 │   │   │   └── ... 
-│   │   ├── app.css
-│   │   └── partials/
-│   │   │   └── app.css
+│   │   ├── index.js
+│   │   ├── pokenea.js
 ├── routes/
 │   └── routes.js
 ├── util/
