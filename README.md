@@ -55,7 +55,7 @@ pokenea-app/
 │   │   ├── partials/
 │   │   │   └── ... 
 │   │   ├── index.js
-│   │   ├── pokenea.js
+│   │   └── pokenea.js
 ├── routes/
 │   └── routes.js
 ├── util/
