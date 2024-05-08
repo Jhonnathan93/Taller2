@@ -1,12 +1,12 @@
 # Pokenea Application
 
 ## Description
-The Pokenea Application is a simple web application built with Node.js and Express.js to showcase random information about Pokéneas. It generates random Pokéneas and displays their details either in JSON format or as an HTML page.
+The Pokenea Application is a simple web application built with Node.js and Express.js to showcase random information about Pokeneas. It generates random Pokeneas and displays their details either in JSON format or as an HTML page.
 
 ## Features
-- Randomly generate Pokéneas data
-- Display Pokéneas information in JSON format
-- Render Pokéneas information in HTML format with images and text
+- Randomly generate Pokeneas data
+- Display Pokeneas information in JSON format
+- Render Pokeneas information in HTML format with images and text
 - Responsive design using Bootstrap
 
 ## Installation
@@ -19,6 +19,8 @@ The Pokenea Application is a simple web application built with Node.js and Expre
    cd Taller2
    ```
 3. Install dependencies:
+   You can install nodejs [here](https://nodejs.org/en/).
+   After
    ```bash
    npm install
    ```
@@ -31,37 +33,39 @@ The Pokenea Application is a simple web application built with Node.js and Expre
 2. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the application (or the port that you are using).
 
 ## Routes
-- `/pokenea/Json`: Get a random Pokénea's information in JSON format.
-- `/pokenea/HTML`: Get a random Pokénea's information rendered in HTML format.
+- `/`: Homepage.
+- `/pokenea/Json`: Get a random Pokenea's information in JSON format.
+- `/pokenea/HTML`: Get a random Pokenea's information rendered in HTML format.
 
 ## Directory Structure
 ```
 pokenea-app/
+├── config/
+│   └── app.js
 ├── controllers/
-│   ├── pokeneaController.js
-├── models/
-│   ├── pokenea.js
+│   └── pokeneaController.js
+├── database/
 │   └── pokeneas.js
-├── public/
+├── models/
+│   └── pokenea.js
+├── resources/
 │   ├── css/
 │   │   └── app.css
+│   ├── views/
+│   │   ├── partials/
+│   │   │   └── ... 
+│   │   ├── app.css
+│   │   └── partials/
+│   │   │   └── app.css
 ├── routes/
 │   └── routes.js
-├── views/
-│   ├── layouts/
-│   │   └── app.ejs
-│   ├── home.ejs
-│   └── pokenea.ejs
-├── app.js
+├── util/
+│   └── util.js
+├── main.js
 ├── package.json
 └── README.md
 ```
 
 ## Credits
-- **Developer:** Your Name
-- **Contact:** Your Email
+- **Developer:** [Santiago Neusa](sneusar@eafit.edu.co) & [Jhonnathan Ocampo](jsocampod@eafit.edu.co)
 - **GitHub Repository:** [Link to GitHub Repo](https://github.com/your-username/pokenea-app)
-
----
-
-Feel free to customize the README file further by adding more details about the project, such as additional features, installation instructions for dependencies, usage examples, and any other relevant information.
